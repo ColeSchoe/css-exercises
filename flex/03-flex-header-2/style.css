@@ -9,9 +9,27 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  padding: 8px;
+}
+
+.header-left-side, .header-right-side {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 16px;
+}
+
+.header-left-side {
+  justify-content: flex-start;
+}
+
+.header-right-side {
+  justify-content: flex-end;
 }
 
 .profile-image {
@@ -29,12 +47,19 @@ body {
   font-style: italic;
 }
 
+.links {
+  display: flex;
+  gap: 8px;
+  padding: 0;
+}
+
 button {
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  max-height: 48px;
 }
 
 a {
